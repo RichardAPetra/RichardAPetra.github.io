@@ -1,7 +1,7 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Marek & Lucia</title>
+  <title>Richard & Petra</title>
   <style>
     @import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
 
@@ -113,12 +113,12 @@
 <body>
   <nav class="navbar">
 <!--     <a href="index.html" class="info">INFO</a> -->
-    <h1 style="margin-top: 4rem;">Marek a Lucia</h1>
+    <h1 style="margin-top: 4rem;">Richard & Petra</h1>
 <!--     <a href="photos.html" class="dary">DARY</a> -->
   </nav>
   
   <main>
-    <h2>2. september 2023</h2>
+    <h2>10. august 2024</h2>
     <h2>15.00</h2>
 
     <!-- listok -->
@@ -126,10 +126,10 @@
       <img src="black leaf.svg" alt="Predel - lístok" style="max-height: 10rem; max-width: 7.04rem;">
     </div>
     
-<!--     <h4 id="pre-countdown-text">Do našej svadby ostáva</h4> -->
-<!--     <h2 id="countdown" style="margin-top: 0; font-size: 3rem;">Prepočítavam</h2> -->
+    <h4 id="pre-countdown-text">Do našej svadby ostáva</h4>
+    <h2 id="countdown" style="margin-top: 0; font-size: 3rem;">Prepočítavam</h2>
     
-    <h4 id="countdown" style="margin-top: 0; font-size: 3rem;">Prepočítavam</h2>
+    <!-- <h4 id="countdown" style="margin-top: 0; font-size: 3rem;">Prepočítavam</h2> -->
 
     
     <div style="display: flex; justify-content: center; margin-top: 2rem; margin-bottom: 2rem;">
@@ -143,6 +143,7 @@
 
     <h2 style="margin-bottom: 0;">Sobáš</h2>
     <h4>Námestie Sv. Rodiny 1, Bardejov</h4>
+    <h4>^ ostáva?</h4>
     <div style="display: flex; justify-content: center;">
       <div style="width: 50%; height: 350px;">
         <iframe
@@ -159,7 +160,8 @@
     
     <h2 style="margin-bottom: 0; margin-top: 3rem;">Svadba</h2>
 <!--     <h4>Obecný úrad Kobyly, Kobyly 57</h4> -->
-    <h4>Kobyly 57 - obecný úrad</h4>
+    <!-- <h4>Kobyly 57 - obecný úrad</h4> -->
+    <h4>Mokroluh?</h4>
     <div style="display: flex; justify-content: center;">
       <div style="width: 50%; height: 350px;">
         <iframe
@@ -182,6 +184,7 @@
     <h4 style="margin-bottom: 0;">Chceli by sme vás poprosiť</h4>
     <h4 style="margin-bottom: 0; margin-top: 1rem;">o vyplnenie <a href="https://forms.gle/Pt6oDWGwMtH3JxKb8" target="_blank">dotazníka</a>,</h4>
     <h4 style="margin-bottom: 0; margin-top: 1rem;">ktorý nám uľahčí prípravu</h4>
+    <h4 style="margin-bottom: 0; margin-top: 1rem;">^ potrebujem link na dotazník :D</h4>
     <h4 style="margin-top: 1rem;">svadobnej hostiny.</h4>
 
     <div style="display: flex; justify-content: center; margin-top: 2rem; margin-bottom: 2rem;">
@@ -229,8 +232,7 @@
 
   <script>
     // Countdown Timer
-    var countDownDate = new Date("September 2, 2023 15:00:00").getTime();
-    // var countDownDate = new Date("July 11, 2023 14:35:00").getTime();
+    var countDownDate = new Date("August 10, 2024 15:00:00").getTime();
 
     var countdown = document.getElementById("countdown");
     var preCountdownText = document.getElementById("pre-countdown-text");
@@ -245,18 +247,18 @@
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       // po sobáši
-      days = -days
-      days = days -1
+      // days = -days
+      // days = days -1
       
       var countdownElement = document.getElementById("countdown");
-      // countdownElement.innerHTML = -days + "d " + -hours + "h " + minutes + "m " + seconds + "s";
-      countdownElement.innerHTML = "Sme svoji už " + days + " dní!";
+      countdownElement.innerHTML = -days + "d " + -hours + "h " + minutes + "m " + seconds + "s";
+      // countdownElement.innerHTML = "Sme svoji už " + days + " dní!";
 
-      // if (distance < 0) {
-      //   clearInterval(x);
-      //   countdown.innerHTML = "Už sa to začalo!";
-      //   preCountdownText.innerHTML = "";
-      // }
+      if (distance < 0) {
+        clearInterval(x);
+        countdown.innerHTML = "Už sa to začalo!";
+        preCountdownText.innerHTML = "";
+      }
     }, 1000);
 
     // Google Map
