@@ -249,14 +249,19 @@
       // days = days -1
       
       var countdownElement = document.getElementById("countdown");
-      countdownElement.innerHTML = -days + "d " + -hours + "h " + minutes + "m " + seconds + "s";
+
+      // pred sobasom
+      countdownElement.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+      
+      
+      // po sobasi
       // countdownElement.innerHTML = "Sme svoji už " + days + " dní!";
 
-      // if (distance < 0) {
-      //   clearInterval(x);
-      //   countdown.innerHTML = "Už sa to začalo!";
-      //   preCountdownText.innerHTML = "";
-      // }
+      if (distance < 0) {
+        clearInterval(x);
+        countdown.innerHTML = "Už sa to začalo!";
+        preCountdownText.innerHTML = "";
+      }
     }, 1000);
 
     // Google Map
