@@ -54,6 +54,14 @@ h2 {
     font-size: 40pt;
 }
 
+.h2-no-margin{
+    margin-bottom: 0;
+}
+
+.h3-no-margin{
+    margin-top: 0;
+}
+
 h3 {
     font-size: 30pt;
 }
