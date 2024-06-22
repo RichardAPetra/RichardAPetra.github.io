@@ -6,8 +6,22 @@
     font-style: normal;
 }
 
+
+@font-face {
+    font-family: 'Alta Regular';
+    src: url('Alta_regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.alta-font {
+    /* font-family: 'Alta Regular', cursive; */
+    font-family: 'Alta Regular';
+}
+
+
 :root {
-    --main-bg-color: #D6C6B6; /* Replace with your desired background color */
+    --main-bg-color: #EDE2D8; /* Replace with your desired background color */
     --border-color: #ffffff; /* White border color */
     --script-font-family: 'Beautifully Delicious Script';
 }
@@ -24,22 +38,35 @@
 /* Style individual boxes */
 .box {
     flex: 1; /* Allow boxes to grow and fill the container equally */
-    margin: 10px; /* Add some margin between boxes */
-    padding: 20px; /* Add some padding inside the boxes */
+    
+    /* margin-left: 10px;
+    margin-right: 10px; */
+
+    /* padding: 20px; Add some padding inside the boxes */
+    /* padding-left: 20px;  */
+    /* padding-right: 20px; */
     text-align: center; /* Center text inside the boxes */
 }
     
 h1, h2, h3, h4 {
-    color: white;
+    color: black;
 }
 
-.alta-font {
+/* pozriet stiahnut ALTA regular font */
+/* .alta-font {
     font-family: 'Alta Regular Font', monospace;
-}
+} */
 
 .forum-font {
     font-family: 'Forum Font', monospace;
 }
+
+.bentham-regular-font {
+    font-family: "Bentham", serif;
+    font-weight: 400;
+    /* font-style: normal; */
+}
+  
 
 .script-font {
     font-family: var(--script-font-family);
@@ -47,33 +74,60 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 60pt;
+    font-size: 65pt;
+    font-weight: normal;
 }
 
 h2 {
     font-size: 40pt;
+    font-weight: normal;
 }
 
 .h2-no-margin{
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .h3-no-margin{
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 h3 {
     font-size: 30pt;
+    font-weight: normal;
 }
 
 h4 {
     font-size: 20pt;
-    font-family: 'Forum Font', monospace;
+    /* font-family: 'Forum Font', monospace; */
+    /* font-family: 'Forum Font', monospace; */
+    /* font-family: 'Alta Regular', monospace; */
+    /* font-family: 'Alta Regular', monospace; */
+}
+h5 {
+    text-transform: uppercase;
+    font-family: "Bentham", serif;
+    font-weight: 400;
+    font-size: 13pt;
 }
 
 .rap_photo {
-    width: 90vw;
+    width: 80vw;
     height: auto;
+}
+.kostol-foto {
+    min-width: 50%;
+    max-width: 90%;
+}
+
+.qrcode-foto{
+    min-width: 15%;
+    max-width: 50%;
+}
+.farby-foto {
+    min-width: 30%;
+    max-width: 80%;
 }
 
 body {
@@ -87,16 +141,20 @@ body {
 }
 
 .and {
-    max-height: 100rem;
-    max-width: 100rem;
-    min-width: 30rem;
-    min-width: 30rem;
+    max-height: 50rem;
+    max-width: 50rem;
+    min-width: 8rem;
 }
 
 /* New styles for the columns */
 .columns {
     display: flex;
-    margin: 20px; /* Add some margin around the columns container */
+    /* margin: 20px; Add some margin around the columns container */
+    margin-bottom: 4%;
+}
+
+.columns h3 {
+    font-size: 60pt; /* Replace with your desired font size */
 }
 
 .column {
@@ -111,10 +169,11 @@ body {
 
 .column-65 {
     flex: 1; /* Flex-grow set to 1 to take the remaining space */
+    background-color: white
 }
 
 .white-border{
-    border: 2px solid var(--border-color); /* Add white border */
+    border: 25px solid var(--border-color); /* Add white border */
 
 }
 
@@ -138,22 +197,30 @@ footer {
     justify-content: center;
 }
 
-@media screen and (min-width: 960px) {
+/* @media screen and (min-width: 960px) {
     .navbar {
     justify-content: space-evenly;
     flex-direction: row;
     }
 
+} */
+
+.uppercase {
+    text-transform: uppercase;
 }
+
 
 @media screen and (max-width: 960px) and (min-width: 20px) {
     h1 {
-    font-size: 55pt;
+    font-size: 65pt;
     }
     h2 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    }
+    h3 {
+
     }
     h4 {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     }
 }
